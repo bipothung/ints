@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cinzel", serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f4f4;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px;
+  border: 2px solid black;
+  height: 100px;
+}
+
+#wrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#topimg {
+  display: flex;
+  gap: 50px;
+}
+#logo {
+  position: relative;
+  left: 300px;
+  cursor: pointer;
+}
+#links {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  position: relative;
+  right: 300px;
+}
+
+#capture {
+  font-size: 80px;
+  color: white;
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+#moments {
+  font-size: 40px;
+  color: black;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+}
+#top {
+  text-align: center;
+}
+
+#light {
+  margin-top: 300px;
+  width: 3500px;
+  overflow-x: hidden;
+}
+#light {
+  display: block;
+}
+#lightvr {
+  display: none;
+}
+
+#subtext {
+  font-size: 45px;
+  border: 2px solid black;
+  padding: 30px;
+  position: relative;
+  left: 20px;
+}
+#subimg {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+#freeze {
+  color: white;
+  font-size: 30px;
+}
+#subhead {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1200px) {
+  #logo {
+    left: 120px;
+  }
+  #links {
+    right: 150px;
+  }
+  #light {
+    display: none;
+  }
+  #subtext {
+    left: 30px;
+  }
+  #subimg {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 779px) {
+  #logo {
+    font-size: 19px;
+    left: 30px;
+  }
+  #links {
+    right: 40px;
+  }
+  #capture {
+    font-size: 60px;
+  }
+  #moments {
+    font-size: 29px;
+    bottom: 10px;
+  }
+  #light {
+    display: none;
+  }
+  #lightvr {
+    display: block;
+    margin-top: 20px;
+  }
+  #subtext {
+    font-size: 30px;
+    left: 20px;
+    padding: 20px;
+  }
+  #subimg {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  #freeze {
+    color: white;
+    font-size: 24px;
+  }
+  #subhead {
+    font-size: 22px;
+    font-weight: 800;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 449px) {
+  #logo {
+    font-size: 18px;
+    left: 10px;
+  }
+  #links {
+    right: 10px;
+    gap: 30px;
+  }
+  #capture {
+    font-size: 40px;
+  }
+  #moments {
+    font-size: 20px;
+    bottom: 8px;
+  }
+  #top {
+    font-size: 24px;
+  }
+  #light {
+    display: none;
+  }
+  #lightvr {
+    display: block;
+    margin-top: 20px;
+  }
+  #subtext {
+    font-size: 20px;
+    left: 10px;
+    padding: 7px;
+  }
+  #subimg {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+  }
+  #freeze {
+    color: white;
+    font-size: 18px;
+  }
+  #subhead {
+    font-size: 18px;
+    font-weight: 800;
+  }
+}
